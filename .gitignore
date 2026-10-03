@@ -1,0 +1,13 @@
+# Sistema
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+# Configuración local de Claude Code (rutas de esta máquina)
+.claude/

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://sebastiancr1324-sketch.github.io/Oswaldo/sitemap.xml
