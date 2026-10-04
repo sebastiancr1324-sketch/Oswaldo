@@ -20,7 +20,7 @@ robots.txt, sitemap.xml
 ## Datos que hay que cambiar en un solo lugar
 
 - **WhatsApp / teléfono:** `5491126142293` aparece en `index.html` (links `wa.me` y `tel:`), en `404.html` y en `js/main.js` (`WA_NUMBER`, `PHONE_DISPLAY`).
-- **Dominio:** las URL absolutas usan `https://sebastiancr1324-sketch.github.io/Oswaldo/`. Si el repositorio se llama distinto o se usa un dominio propio, actualizar `canonical`, `og:url`, `og:image`, `twitter:image` y el JSON-LD en `index.html`, las rutas `/Oswaldo/` de `404.html`, `robots.txt` y `sitemap.xml`.
+- **Dominio:** las URL absolutas usan `https://sebbasv.github.io/Oswaldo/`. Si el repositorio se llama distinto o se usa un dominio propio, actualizar `canonical`, `og:url`, `og:image`, `twitter:image` y el JSON-LD en `index.html`, las rutas `/Oswaldo/` de `404.html`, `robots.txt` y `sitemap.xml`.
 
 ## Pendiente
 
