@@ -855,3 +855,10 @@ footer {
   .js .hero { height: 100vh; height: 100svh; }
   .route, .scroll-hint { display: none; }
 }
+
+/* ---------- Precio fijo ---------- */
+.price-tag { display: inline-block; margin-left: 4px; padding: 2px 8px; border-radius: 6px; background: var(--accent); color: var(--accent-ink); font: 700 13px/1.4 var(--font-mono); white-space: nowrap; }
+.board-row .price-tag { margin: 6px 0 0; display: table; }
+.price-note { grid-column: 1 / -1; padding: 12px 14px; border-radius: 10px; border: 1.5px solid var(--accent); font-weight: 600; }
+.price-note.quote { border-style: dashed; border-color: var(--line); font-weight: 500; color: var(--muted); }
+.beat strong { color: var(--accent); }

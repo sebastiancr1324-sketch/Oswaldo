@@ -4,6 +4,7 @@
   const WA_NUMBER = '5491126142293';
   const PHONE_DISPLAY = '+54 9 11 2614-2293';
   const ROUTE_KM = 35;
+  const PRICE_AIRPORT = '$35.000';
 
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const touch = matchMedia('(pointer: coarse)').matches;
@@ -304,7 +305,7 @@
       `• Pasajeros: ${val('pasajeros')} · Valijas grandes: ${val('valijas')}`
     );
     if (val('notas')) lines.push(`• Comentarios: ${val('notas').replace(/\s*\n\s*/g, ' ')}`);
-    lines.push('¿Cuál sería la tarifa?');
+    lines.push(id === 't3' ? '¿Cuál sería la tarifa?' : `Tarifa fija: ${PRICE_AIRPORT}. ¿Me confirmás disponibilidad?`);
     return lines.join('\n');
   }
 
@@ -355,6 +356,10 @@
     origCode.firstChild.nodeValue = cfg.codes[0];
     destCode.firstChild.nodeValue = cfg.codes[1];
     routeIcon.setAttribute('href', cfg.icon);
+
+    const pn = $('priceNote');
+    pn.textContent = isCity ? 'Los viajes dentro de CABA no tienen precio fijo: Oswaldo te pasa la tarifa por WhatsApp.' : `Precio fijo: ${PRICE_AIRPORT} el viaje completo, ida o vuelta.`;
+    pn.classList.toggle('quote', isCity);
 
     const pax = +val('pasajeros');
     const bags = +val('valijas');
